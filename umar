@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apple Variety   </title>
+        <link rel="stylesheet" href="style.css">
+        <script  rel="javascript/text" src="script.js"></script>
+                
+    </head>
+    <body>
+        <div class="outer">
+            <div class="heading">
+                <p><h2>Top 5 Varieties of <span>Apple</span> found in Kashmir</h2></p>
+            </div>
+            <div class="btn-list">
+                <div class="item"><a href="#" onclick="showApple(1)">Red Velox</a></div>
+                <div class="item"><a href="#" onclick="showApple(2)">Redlum Gala</a></div>
+                <div class="item"><a href="#" onclick="showApple(3)">Scarlet II</a></div>
+                <div class="item"><a href="#" onclick="showApple(4)">Golden Delecious</a></div>
+                <div class="item"><a href="#" onclick="showApple(5)">Jeromine</a></div>
+            </div>
+            
+            <div class="parent" id="Apple1">
+                <div class="child">
+                    <img src="pics\RedVelox.jpg" alt="no image" >
+                </div>
+                <div class="child" id="detail">
+                    <p>The Red Velox apple, a dark red, conical-shaped apple, is known for its high 
+                        and uniform yields, early and uniform coloring, and good storage capabilities, 
+                        maturing in mid-September and storing well for up to 8 months in CA storage. 
+                        Here's a more detailed look at the Red Velox apple:
+                        Key Characteristics:
+                        Appearance: Large, dark red with a slightly striped, blushed covering color, 
+                        conical shape, and a smooth, rather thick skin.
+                        Flavor: Very sweet, with low acidity.
+                        Flesh: Greenish-white, firm, crispy, and juicy.
+                        Origin: Italy.
+                        Tree: Moderate growth, with a typical spur character.
+                        Blooms: Mid-early, a few days before Golden Delicious.
+                        Pollinators: Granny Smith, Golden Delicious, Idared, Gala, Fuji.
+                        Yield: High and uniform.
+                        Maturation: Mid-September.</p>
+                </div>
+            </div>
+            <div class="parent" id="Apple2">
+                <div class="child">
+                    <img src="pics\RedlumGala.jpg" alt="no image" >
+                </div>
+                <div class="child" id="detail">
+                    <p>The Redlum Gala apple is a late-color variety, suitable for elevations above 7000 feet, 
+                        known for its uniformly red
+                         color and intense coloration, making it ideal for high-altitude regions. 
+                        Here's a more detailed look at the Redlum Gala apple:
+                        Origin:
+                        Redlum Gala is a mutation of the standard Gala apple. 
+                        Characteristics:
+                        Color: It's known for its uniformly red color, more intensely colored than standard Gala. 
+                        Suitability: It's well-suited for high-altitude areas, specifically above 7000 feet. 
+                        Late color variety: Redlum Gala is a late color variety, meaning it develops its red color later in the season. 
+                        Cultivation:
+                       </p>
+                </div>
+            </div>
+            <div class="parent" id="Apple3">
+                <div class="child">
+                    <img src="pics\Scarlet2.jpeg" alt="no image" >
+                </div>
+                <div class="child" id="detail">
+                    <p>Scarlet Spur II apples, a high-color strain of Red Delicious, are known for their striking red color, sweet-tart taste, and exceptional juiciness, making them popular for snacking, baking, and cider-making. 
+                        Here's a more detailed look at the characteristics of Scarlet Spur II apples:
+                        Appearance: These apples have a distinctive, bright red color, with a medium to large size. 
+                        Flavor: They are known for their sweet-tart flavor and juicy flesh. 
+                        Origin: Scarlet Spur II is a high-color strain of Red Delicious apples, imported from Oregon. 
+                        Ripening: They ripen in late summer or early autumn. 
+                        Uses: They are versatile, suitable for eating fresh, baking, and making cider. 
+                        Tree: The tree is a very productive variety that grows spur and semi-upright. 
+                      </p>
+                </div>
+            </div>
+            <div class="parent" id="Apple4">
+                <div class="child">
+                    <img src="pics\GoldenD.jpg" alt="no image" >
+                </div>
+                <div class="child" id="detail">
+                    <p>Golden Delicious apples are known for their smooth, golden-yellow  
+                        Texture: Crisp but slightly softer than some red apple varieties. 
+                        Nutritional Value: Rich in vitamin C, fiber, and antioxidants. 
+                        Versatility: Excellent for eating fresh, salads, and baking. 
+                        </p>
+                </div>
+            </div>
+            <div class="parent" id="Apple5">
+                <div class="child">
+                    <img src="pics\Jeromine.jpg" alt="no image" >
+                </div>
+                <div class="child" id="detail">
+                    <p>Jeromine apples, a mutation of the Early Red One, are known for their very dark, uniformly red color, crisp white flesh, and sweet taste with low acidity, making them a popular and high-quality apple variety. 
+                        Here's a more detailed look at the Jeromine apple:
+                        Appearance:
+                        Jeromine apples have a very intense, dark red color, often described as having a "blushed" appearance. 
+                        Taste:
+                        They are known for their crisp, white flesh and a sweet taste with minimal acidity, making them a flavorful and versatile apple. 
+                        Origin:
+                        Jeromine apples are a mutation of the Early Red One apple variety, selected in France. 
+                        Tree Characteristics:
+                        The Jeromine tree is a standard form with medium vigor and good productivity, producing high yields of fruit. 
+                        Storage:
+                        Jeromine apples can be stored for extended periods, both on and off the tree, according to Specialty Produce [1].
+                        Culinary Uses:
+                        </div>
+            </div>
+
+        </div>
+    </body>
+    
+    
+</html>
+function showApple(id){
+    var elm=0;
+    for(let i=1;i<6;i++)
+        {
+            elm= document.getElementById("Apple"+i+"");
+            //console.log("inside for"+elm);
+            if(i===id)
+              { //console.log("inside if");
+                elm.style.display="flex";
+              }
+              else
+              elm.style.display="none";
+        }
+    
+}
+
+
+body{
+    margin:30px 50px;
+    background-color: rgb(207, 199, 199);
+}
+a{
+    text-decoration: none;
+}
+span{
+    text-shadow: 2px;
+    color: rgb(211, 19, 63);
+}
+.outer{
+    width:100%;
+    align-self: center;
+    height: 600px;
+    
+}
+.heading{
+    padding-left:10px ;
+}
+.btn-list{
+    display:inline-flex ;
+    gap: 10px;
+}
+.item{
+    margin: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid rgb(4, 4, 105);
+    border-radius: 10px;
+    background-color: rgb(242, 233, 242);
+   
+}
+.parent{
+    border: solid 2px rgb(45, 5, 120);
+    display: none;
+    gap:10px;
+    margin: 10px 10px;
+
+}
+.parent img{
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+}
+.child{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-wrap: break-word ;
+    /* border: solid 2px rgb(255, 0, 51); */
+
+}
+.child p{
+    padding: 10px;
+    word-wrap: break-word ;
+}
+
