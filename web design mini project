@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Community</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2d3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            padding: 5px 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .intro,
+        .members-list,
+        .help,
+        .events,
+        .forum,
+        .resources {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .help form textarea,
+        .help form button,
+        .resources ul li a {
+            width: 100%;
+        }
+
+        .help form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            height: 120px;
+        }
+
+        .help form button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .help form button:hover {
+            background-color: #218838;
+        }
+
+        .resources ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .resources ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .resources ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Student Community</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#help">Help</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="intro" class="intro container">
+        <h2>Join our community and be a part of something big!</h2>
+        <p>Here, students come together to share, help, learn, and grow.</p>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members" class="members-list container">
+        <h2>Our Active Members</h2>
+        <ul>
+            <li>John Doe</li>
+            <li>Jane Smith</li>
+            <li>Alice Brown</li>
+            <li>Bob White</li>
+            <!-- Add more members here -->
+        </ul>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help" class="help container">
+        <h2>How Can We Help?</h2>
+        <p>If you need assistance, feel free to ask for help from the community.</p>
+        <form>
+            <label for="help-request">Request Help:</label><br>
+            <textarea id="help-request" placeholder="Describe your issue or request..."></textarea><br>
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events container">
+        <h2>Join Our Next Event!</h2>
+        <ul>
+            <li>Web Development Workshop - May 10, 2025</li>
+            <li>Student Meetup - June 5, 2025</li>
+            <li>Hackathon - July 15, 2025</li>
+        </ul>
+    </section>
+
+    <!-- Forum Section -->
+    <section id="forum" class="forum container">
+        <h2>Discussion Topics</h2>
+        <ul>
+            <li><a href="#">How to succeed in your first year</a></li>
+            <li><a href="#">Best resources for coding practice</a></li>
+            <li><a href="#">Student mental health during exams</a></li>
+        </ul>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources container">
+        <h2>Useful Resources</h2>
+        <ul>
+            <li><a href="#">Free Coding Tutorials</a></li>
+            <li><a href="#">Mental Health Support for Students</a></li>
+            <li><a href="#">Online Study Groups</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Student Community</p>
+    </footer>
+</body>
+
+</html>
+
+
